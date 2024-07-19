@@ -52,7 +52,7 @@ main {
 .logo{
     display: flex;
     justify-content: center;
-    padding: 10vw;
+    padding-top: 10vw;
     opacity: 0;
     transform: translateY(20px); /* Start slightly below its final position */
     animation: fadeIn 1s ease-out forwards; /* Animation properties */
@@ -228,6 +228,8 @@ h3{
 .hover-button-a {
     display: flex;
     padding: 12px 12px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 16px;
     font-weight: bold;
     color: rgba(255, 255, 255, 1);
@@ -279,6 +281,8 @@ h3{
   .hover-button-b {
     display: flex;
     padding: 12px 12px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 16px;
     font-weight: bold;
     color: rgba(255, 255, 255, 1);
@@ -331,7 +335,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5vw;
+    padding-top: 1.2vw;
     opacity: 0;
     transform: translateY(20px); /* Start slightly below its final position */
     animation: fadeIn 1s ease-out forwards; /* Animation properties */
@@ -360,7 +364,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5vw;
+  padding-top: 1.2vw;
     opacity: 0;
     transform: translateY(20px); /* Start slightly below its final position */
     animation: fadeIn 1s ease-out forwards; /* Animation properties */
@@ -382,4 +386,12 @@ h3{
  .chuni p{
     color: rgb(209, 209, 209);
     text-align: center;
+ }
+
+ .buttons{
+    justify-content: center;
+    width: 50%;
+  
+    margin: auto;
+    margin-bottom: 20px;
  }
