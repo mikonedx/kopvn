@@ -13,7 +13,7 @@ body{
 
 
 body, html {
-    height: 100vh;
+    height: 100%;
   }
   
   .bg {
@@ -94,42 +94,26 @@ nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-footer {
-    background-color: #91a007; /* Background color of the footer */
-    color: #d4cfcf; /* Text color of the footer */
-    padding: 10px 0; /* Padding around the footer content */
-    width: 100%; /* Full width */
-    bottom: 0; /* Stick to the bottom of the viewport */
-}
 
-.footer-left,
-.footer-right {
-    flex: 1; /* Equal width for left and right sections */
-}
-
-.footer-right {
-    text-align: right; /* Align contents to the right */
-}
 
 .split{
     display: flex;
-    flex-direction: row;
+
     flex-wrap: wrap;
     justify-content: space-around;
 
     margin-top: 80px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5.5vw;
+    
 }
 
 .sidebar{
     width: 350px;
     height: fit-content;
     background-color: #fff;
-
+    
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 
 }
@@ -143,8 +127,9 @@ footer {
 
 .infoBar{
     min-width: 70vw;
-    max-height: 60vh;
-    overflow: scroll;
+    max-height: 100vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
 
     background-color: #fff;
 
@@ -153,3 +138,10 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5.5vw;
+}
+
