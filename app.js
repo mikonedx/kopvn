@@ -10,6 +10,7 @@ let sidebar = document.getElementById('bar');
 let resizeTimeout;
 let initialWidth = window.innerWidth;
 let initialHeight = window.innerHeight;
+const maxWidth = 1280;
 
 window.addEventListener('resize', function() {
     clearTimeout(resizeTimeout);
@@ -17,17 +18,31 @@ window.addEventListener('resize', function() {
         // Handle resize event here
         let currentWidth = window.innerWidth;
         let currentHeight = window.innerHeight;
-        if (currentWidth === initialWidth && currentHeight === initialHeight) {
-            console.log('Window has returned to its original size (unresized).');
-            sidebar.style.width = '350px';
-            sidebar.classList.add('sticky')
-            // Perform actions for unresize event here
-        }
-        else{
-            console.log('Window has been resized!');
-            sidebar.style.width = '70vw';
-            sidebar.classList.remove('sticky')
-        }
+        
+            if (currentWidth === initialWidth && currentHeight === initialHeight) {
+                if (initialWidth < maxWidth) {
+                    // Perform actions when the window width is less than maxWidth
+                    console.log('Window width is less than 1280 pixels.');
+                    // Example: Changing sidebar width
+                    
+                    sidebar.style.width = '70vw';
+                    sidebar.classList.remove('sticky');
+                }
+                else if (initialWidth >= maxWidth){
+                    
+                    console.log('Window has returned to its original size (unresized).');
+                    sidebar.style.width = '350px';
+                    sidebar.classList.add('sticky')
+                    // Perform actions for unresize event here
+                }
+            }
+            else{
+                console.log('Window has been resized!');
+                sidebar.style.width = '70vw';
+                sidebar.classList.remove('sticky')
+            }
+        
+        
     }, 0); // Adjust debounce delay as needed (in milliseconds)
 });
 
@@ -41,5 +56,12 @@ if (isMobileDevice()) {
     sidebar.classList.remove('sticky')
 } else {
     console.log('User is not on a mobile device');
-
+    if (initialWidth < maxWidth) {
+        // Perform actions when the window width is less than maxWidth
+        console.log('Window width is less than 1280 pixels.');
+        // Example: Changing sidebar width
+        
+        sidebar.style.width = '70vw';
+        sidebar.classList.remove('sticky');
+    }
 }
