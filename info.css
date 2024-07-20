@@ -94,21 +94,23 @@ nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-
+#flex-container{
+    width: 100%;
+    height: fit-content;
+}
 
 .split{
     display: flex;
 
     flex-wrap: wrap;
     justify-content: space-around;
-
+    flex-direction: row;
     margin-top: 80px;
     
 }
 
 .sidebar{
-    width: 350px;
-    height: fit-content;
+   
     background-color: #fff;
     
     display: flex;
@@ -116,6 +118,11 @@ nav ul li a:hover {
     align-items: center;
     margin-top: 20px;
 
+}
+
+#bar{
+    width: 350px;
+    height: fit-content;
 }
 
 
@@ -127,8 +134,8 @@ nav ul li a:hover {
 
 .infoBar{
     min-width: 70vw;
-    max-height: 100vh;
-    overflow-y: auto;
+    max-height: fit-content;
+    
     border: 1px solid #ccc;
 
     background-color: #fff;
