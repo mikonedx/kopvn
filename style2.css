@@ -44,16 +44,19 @@ main {
     flex: 1; /* Main content takes up remaining space */
 }
 
-.logo img{
-    width: 20%;
-    height: 20%;
+#logoImg{
+    width: 30%;
+    height: 30%;
 }
 
 .logo{
+    
     display: flex;
     justify-content: center;
-    padding-top: 10vw;
+    padding-top: 12vw;
     opacity: 0;
+    
+    margin: auto;
     transform: translateY(20px); /* Start slightly below its final position */
     animation: fadeIn 1s ease-out forwards; /* Animation properties */
 }
@@ -125,7 +128,7 @@ header {
     z-index: 1;
 }
 
-header img{
+#home{
     width: 5%;
     height: 5%;
 }
@@ -239,7 +242,7 @@ h3{
     flex-wrap: wrap;
 
     height: fit-content;
-    width: 420px;
+    width: 400px;
 
     border: 4px solid rgba(0, 238, 255, 1);
     border-radius: 5px;
@@ -292,7 +295,7 @@ h3{
     flex-wrap: wrap;
 
     height: fit-content;
-    width: 420px;
+    width: 400px;
 
     border: 4px solid rgb(255, 71, 240);
     border-radius: 5px;
@@ -379,7 +382,7 @@ h3{
 
  .chuni h2{
     padding-left: 12px;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
  }
 
