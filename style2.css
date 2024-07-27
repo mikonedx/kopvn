@@ -103,7 +103,7 @@ main {
 }
 
 .register:not(:hover){
-    animation: buttonLeave .2s ease-in;
+    animation: buttonLeave .2s ease-out;
     animation-fill-mode: forwards;
 }
 @keyframes button {

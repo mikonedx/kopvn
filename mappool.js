@@ -193,7 +193,7 @@ function handleGetSong(round){
     setTimeout(() => {
         getSong(round)
         fadeInDivs()
-    }, 1000); // Delay each item by 500ms multiplied by its index
+    }, 800); // Delay each item by 500ms multiplied by its index
     
 }
 
@@ -226,6 +226,7 @@ function fadeInDivs() {
     items.forEach((item, index) => {
         setTimeout(() => {
             item.style.opacity = 1;
+            
         }, index * 100 + 100); // Delay each item by 500ms multiplied by its index
     });
 }

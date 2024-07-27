@@ -223,10 +223,11 @@ nav ul li a:hover {
 
 .fadeIn-item {
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 600ms ease-in;
+    
 }
 
 .fadeOut-item {
     opacity: 1;
-    transition: opacity 1s ease-out;
+    transition: opacity 600ms ease-out;
 }
