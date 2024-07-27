@@ -41,7 +41,7 @@ body, html {
 }
 
 header {
-    background-color: #000000; /* Background color of the header */
+    background-color: #292929; /* Background color of the header */
     color: #fff; /* Text color of the header */
     padding: 2px 0; /* Padding around the header content */
     position: fixed;

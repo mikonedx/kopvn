@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Mukta", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of the viewport */
+}
+
+
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    /* The image used */
+
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Ensure video is behind other content */
+}
+
+header {
+    background-color: #292929; /* Background color of the header */
+    color: #fff; /* Text color of the header */
+    padding: 2px 0; /* Padding around the header content */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#home{
+    width: 5%;
+    height: 5%;
+}
+
+main {
+    flex: 1; /* Main content takes up remaining space */
+}
+
+.container {
+    width: 80%; /* Width of the header content */
+    margin: 0 auto; /* Center aligning the content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img:hover{
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0; /* Remove default margin for h1 */
+}
+
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add space between list items */
+}
+
+nav ul li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 85px;
+}
+
+.mapBar{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 85px;
+}
+
+.mapBar h3{
+    color: #000000;
+}
+
+
+
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.roundSelector{
+    width: 180px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.roundSelector:hover{
+    cursor: pointer;
+}
+
+.active-page {
+    background-color: black;
+   
+}
+
+.active-page h3{
+    color: #fff;
+}
+
+#songQuery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content:space-evenly;
+}
+
+.song{
+    background-color: #fff;
+    
+    width: 180px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.song img{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.song-name{
+    color: #fff;
+    text-align: center;
+
+}
+
+.song-name p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.display{
+    position: relative;
+}
+
+.diff{
+    position: absolute;
+    z-index: 1;
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust text size */
+    text-align: center; /* Center align text */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for text readability */
+    padding: 5px;
+    width: 40px;
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.song-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.Expert{
+    background-color: rgba(253, 0, 0, 0.6);
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+.Master{
+    background-color: rgba(139, 10, 190, 0.6);
+    border: 5px solid rgb(139, 10, 190);
+    border-radius: 5px;
+}
+
+.ReMaster{
+    background-color: rgba(239, 62, 255, 0.6);
+    border: 5px solid rgb(239, 62, 255);
+    border-radius: 5px;
+}
+

@@ -1,6 +1,5 @@
 let home = document.getElementById('home');
-let logo = document.getElementById('logoPic');
-let img = document.getElementById('logoImg');
+
 let resizeTimeout;
 let initialWidth = window.innerWidth;
 let initialHeight = window.innerHeight;
@@ -20,30 +19,24 @@ window.addEventListener('resize', function() {
                     console.log('Window width is less than 1280 pixels.');
                     // Example: Changing sidebar width
                     
-                    home.style.width = '100px';
+                    home.style.width = '50px';
                     home.style.height = '100%';
-                    logo.style.width = '300px';
-                    img.style.width = '100%';
-                    img.style.height = '100%';
+                    
                 }
                 else if (initialWidth >= maxWidth){
                     
                     console.log('Window has returned to its original size (unresized).');
-                    home.style.width = '10%';
-                    home.style.height = '10%';
-                    logo.style.width = '100%';
-                    img.style.width = '30%';
-                    img.style.height = '30%';
+                    home.style.width = '5%';
+                    home.style.height = '5%';
+                   
                     // Perform actions for unresize event here
                 }
             }
             else{
                 console.log('Window has been resized!');
-                home.style.width = '100px';
+                home.style.width = '50px';
                 home.style.height = '100%';
-                logo.style.width = '300px';
-                img.style.width = '100%';
-                img.style.height = '100%';
+                
             }
         
         
@@ -56,11 +49,9 @@ function isMobileDevice() {
 
 if (isMobileDevice()) {
     console.log('User is on a mobile device');
-    home.style.width = '100px';
+    home.style.width = '50px';
     home.style.height = '100%';
-    logo.style.width = '300px';
-    img.style.width = '100%';
-    img.style.height = '100%';
+    
 } else {
     console.log('User is not on a mobile device');
     if (initialWidth < maxWidth) {
@@ -68,10 +59,8 @@ if (isMobileDevice()) {
         console.log('Window width is less than 1280 pixels.');
         // Example: Changing sidebar width
         
-        home.style.width = '100px';
+        home.style.width = '50px';
         home.style.height = '100%';
-        logo.style.width = '300px';
-        img.style.width = '100%';
-        img.style.height = '100%';
+        
     }
 }
