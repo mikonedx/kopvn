@@ -150,11 +150,23 @@ nav ul li a:hover {
 
 .song{
     background-color: #fff;
-    
     width: 180px;
     margin-bottom: 20px;
     margin-left: 5px;
     margin-right: 5px;
+    
+}
+
+@keyframes fadeIn {
+    to {
+      transform: translateY(0); /* Move to final position */
+    }
+}
+
+@keyframes fadeOut {
+    to {
+      transform: translateY(30px); /* Move to final position */
+    }
 }
 
 .song img{
@@ -224,10 +236,13 @@ nav ul li a:hover {
 .fadeIn-item {
     opacity: 0;
     transition: opacity 600ms ease-in;
-    
+    transform: translateY(30px); /* Start slightly below its final position */
+
 }
 
 .fadeOut-item {
     opacity: 1;
     transition: opacity 600ms ease-out;
+    transform: translateY(0); /* Start slightly below its final position */
+
 }

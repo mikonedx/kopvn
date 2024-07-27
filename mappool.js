@@ -217,6 +217,7 @@ function fadeOutDivs() {
     items.forEach((item, index) => {
         setTimeout(() => {
             item.style.opacity = 0;
+            item.style.animation = "fadeOut 800ms ease-out forwards";
         }, index * 100 + 100); // Delay each item by 500ms multiplied by its index
     });
 }
@@ -226,7 +227,7 @@ function fadeInDivs() {
     items.forEach((item, index) => {
         setTimeout(() => {
             item.style.opacity = 1;
-            
+            item.style.animation = "fadeIn 800ms ease-out forwards";
         }, index * 100 + 100); // Delay each item by 500ms multiplied by its index
     });
 }
