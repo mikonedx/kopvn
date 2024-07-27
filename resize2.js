@@ -18,9 +18,9 @@ window.addEventListener('resize', function() {
                     console.log('Window width is less than 1280 pixels.');
                     // Example: Changing sidebar width
                     
-                    sidebar.style.width = '70vw';
+                    sidebar.style.width = '70vw'
                     sidebar.classList.remove('sticky');
-                    home.style.width = '50px';
+                    home.style.width = '100px';
                     home.style.height = '100%';
                 }
                 else if (initialWidth >= maxWidth){
@@ -28,6 +28,8 @@ window.addEventListener('resize', function() {
                     console.log('Window has returned to its original size (unresized).');
                     sidebar.style.width = '350px';
                     sidebar.classList.add('sticky')
+                    home.style.width = '10%';
+                    home.style.height = '10%';
                     // Perform actions for unresize event here
                 }
             }
@@ -35,7 +37,7 @@ window.addEventListener('resize', function() {
                 console.log('Window has been resized!');
                 sidebar.style.width = '70vw';
                 sidebar.classList.remove('sticky')
-                home.style.width = '50px';
+                home.style.width = '100px';
                 home.style.height = '100%';
             }
         
@@ -51,7 +53,7 @@ if (isMobileDevice()) {
     console.log('User is on a mobile device');
     sidebar.style.width = '70vw';
     sidebar.classList.remove('sticky')
-    home.style.width = '50px';
+    home.style.width = '100px';
     home.style.height = '100%';
 } else {
     console.log('User is not on a mobile device');
@@ -62,7 +64,7 @@ if (isMobileDevice()) {
         
         sidebar.style.width = '70vw';
         sidebar.classList.remove('sticky');
-        home.style.width = '50px';
+        home.style.width = '100px';
         home.style.height = '100%';
     }
 }

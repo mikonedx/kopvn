@@ -50,8 +50,8 @@ header {
 }
 
 #home{
-    width: 5%;
-    height: 5%;
+    width: 10%;
+    height: 10%;
 }
 
 main {
@@ -173,6 +173,11 @@ nav ul li a:hover {
     padding-bottom: 10px;
 }
 
+.song-artist{
+    color: #fff;
+    text-align: center;
+}
+
 .display{
     position: relative;
 }
@@ -186,12 +191,12 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for text readability */
     padding: 5px;
     width: 40px;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 0px 0px 5px 0px; /* Optional: rounded corners */
 }
 
 .song-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
