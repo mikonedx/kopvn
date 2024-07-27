@@ -221,3 +221,12 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.fadeIn-item {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fadeOut-item {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}

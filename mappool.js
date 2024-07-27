@@ -164,7 +164,7 @@ const songQuery = document.querySelector("#songQuery");
 
 function createSong(item) {
 	let div_item = document.createElement("div");
-    div_item.setAttribute("class", `song ${item.diffName}` )
+    div_item.setAttribute("class", `song ${item.diffName} fadeIn-item` )
 	div_item.innerHTML = `
     <div class="song-image">
         <div class="diff"><p>${item.diff}</p></div>
@@ -184,11 +184,17 @@ function handleSwitch(round) {
 	currentActive.classList.remove("active-page");
 	let nowActive = document.querySelector("#" + round);
 	nowActive.classList.add("active-page");
-	
+
 }
 
 function handleGetSong(round){
-    getSong(round)
+    
+    fadeOutDivs()
+    setTimeout(() => {
+        getSong(round)
+        fadeInDivs()
+    }, 1000); // Delay each item by 500ms multiplied by its index
+    
 }
 
 function getSong(data) {
@@ -199,9 +205,34 @@ function getSong(data) {
     }
 }
 
+function fadeOutDivs() {
+    const song = document.querySelectorAll("#songQuery .song")
+    song.forEach((item) =>{
+        
+        item.classList.remove("fadeIn-item")
+        item.classList.add("fadeOut-item")
+    })
+    
+    const items = document.querySelectorAll('#songQuery .fadeOut-item');
+    items.forEach((item, index) => {
+        setTimeout(() => {
+            item.style.opacity = 0;
+        }, index * 100 + 100); // Delay each item by 500ms multiplied by its index
+    });
+}
+
+function fadeInDivs() {
+    const items = document.querySelectorAll('#songQuery .fadeIn-item');
+    items.forEach((item, index) => {
+        setTimeout(() => {
+            item.style.opacity = 1;
+        }, index * 100 + 100); // Delay each item by 500ms multiplied by its index
+    });
+}
+
 function run() {
     getSong(Qualifiers);
-    
+    fadeInDivs()
 }
 
 run()
