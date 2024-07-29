@@ -74,7 +74,7 @@ const Round8 = [
         name: "バグ",
         artist: "かいりきベア",
         diff: "13+",
-        diffName: "Master",
+        diffName: "ReMaster",
         img: "https://cdn.discordapp.com/attachments/1180037189879472181/1266677121145769984/bc3de6138414088ef1c82f9c9d231cda5b2a9c42741569ab7454670e453cc1ca.png?ex=66a6047f&is=66a4b2ff&hm=231889563e0b4e3370f27ebdb0bb0ad0bfe4deb691e04ad9fee40f2d8e9f9632&",
     },
 ];
