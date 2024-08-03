@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mappool</title>
-    <link rel="stylesheet" href="mappool.css">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <video id="video-background" autoplay muted loop>
         <source src="https://r2.e-z.host/587e0a17-de16-4be9-ab18-e2db8080a836/ol29406h.mp4" type="video/mp4">
     </video>
-    <header id="main-header">
+    <header>
         <div class="container">
             <img src="https://cdn.discordapp.com/attachments/1262582032966357022/1267432997037281294/logo.jpg.png?ex=66a8c476&is=66a772f6&hm=dbf55b031e128db13efcb12d51ff891651786f6225ba1cceebd93244c644ed92&" alt="" onclick="handleClick()" id="home">
             <nav>
@@ -27,32 +27,27 @@
         </div>
     </header>
     <main>
-        <div class="mapBar" id="flex-container">
-            <div onclick="handleSwitch('Qualifiers'), handleGetSong(Qualifiers)" class="roundSelector active-page" id="Qualifiers">
-                <h3>Qualifiers</h3>
+        <div class="contactContainer">
+            <div class="contacts" id="Mira">
+                <div class="contactImg">
+                    <img src="https://cdn.discordapp.com/attachments/1089402568301625445/1269305970937434172/tq4fDRft_400x400.png?ex=66af94ce&is=66ae434e&hm=86c74809ff4f76746401ef70fc8f0ac00a841e583bd19839831009bd13db9ec1&" alt="">
+                </div>
+                <div class="contactInfo">
+                    <h1>MyAngelMira</h1>
+                    <h2><a href="https://www.facebook.com/yukina.minato.9461">Facebook</a></h2>
+                    <h2><a href="https://x.com/yukinnchan210">Twitter</a></h2>
+                    <h2><a href="http://discordapp.com/users/564084097559822340">Discord</a></h2>
+                </div>
             </div>
-            <div onclick="handleSwitch('Round16'), handleGetSong(Round16)" class="roundSelector" id="Round16">
-                <h3>Round of 16</h3>
-            </div>
-            <div onclick="handleSwitch('Round8'), handleGetSong(Round8)" class="roundSelector" id="Round8">
-                <h3>Round of 8</h3>
-            </div>
-            <div onclick="handleSwitch('Quarterfinals'), handleGetSong(Quarterfinals)" class="roundSelector" id="Quarterfinals">
-                <h3>Quarterfinals</h3>
-            </div>
-            <div onclick="handleSwitch('Semifinals'), handleGetSong(Semifinals)" class="roundSelector" id="Semifinals">
-                <h3>Semifinals</h3>
-            </div>
-            <div onclick="handleSwitch('GFinals'), handleGetSong(GFinals)" class="roundSelector" id="GFinals">
-                <h3>Grand Finals</h3>
-            </div>
-        </div>
-        <div id="songQuery">
+            <div class="contacts" id="Someone">
+                <img src="" alt="">
+                <div class="contactInfo">
 
+                </div>
+            </div>
         </div>
     </main>
 </body>
 <script src="app.js"></script>
-<script src="mappool.js"></script>
-<script src="resize3.js"></script>
+<script src="resize4.js"></script>
 </html>

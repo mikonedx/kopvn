@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Mukta", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of the viewport */
+}
+
+
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    /* The image used */
+
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Ensure video is behind other content */
+}
+
+header {
+    background-color: #292929; /* Background color of the header */
+    color: #fff; /* Text color of the header */
+    padding: 2px 0; /* Padding around the header content */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#home{
+    width: 10%;
+    height: 10%;
+}
+
+main {
+    flex: 1; /* Main content takes up remaining space */
+
+}
+
+.container {
+    width: 80%; /* Width of the header content */
+    margin: 0 auto; /* Center aligning the content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img:hover{
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0; /* Remove default margin for h1 */
+}
+
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add space between list items */
+}
+
+nav ul li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contactContainer{
+    margin-top: 100px;
+}
+
+.contacts{
+    width: 55%;
+
+    background-color: #fff;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.contactImg{
+    padding-top: 9px;
+}
+.contacts img{
+    height: 150px;
+
+    border-radius: 50%;
+    
+}
+
+.contactInfo h2{
+    text-align: center;
+
+}
+
+.contactInfo a{
+    color: white;
+    
+}
+
+.contactInfo h2:hover{
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to final position */
+    }
+  }
+
+#Mira{
+    background-color: rgba(157, 84, 216, 0.6);
+    border:rgb(157, 84, 216) solid 3px ;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards; /* Animation properties */
+}
+
+#Mira img{
+    border:rgb(157, 84, 216) solid 3px ;
+}
+
+#Someone{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards; /* Animation properties */
+    animation-delay: 400ms;
+}

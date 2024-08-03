@@ -250,9 +250,9 @@ h3{
     position: relative;
     overflow: hidden;
     transition: color 0.4s, background-color 0.4s;
-  }
+}
   
-  .hover-button-a::before {
+.hover-button-a::before {
     content: '';
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
@@ -262,26 +262,26 @@ h3{
     left: 0;
     transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
     transform: translateY(-100%);
-  }
+}
   
-  .hover-button-a:hover::before {
+.hover-button-a:hover::before {
     transform: translateY(0);
-  }
+}
   
-  .hover-button-a:hover {
+.hover-button-a:hover {
     color: white;
     background-color: rgb(0, 238, 255);
-  }
+}
 
-  .hover-button-a img{
+.hover-button-a img{
     transition: transform 0.3s ease;
-  }
+}
 
-  .hover-button-a:hover img{
+.hover-button-a:hover img{
     transform: scale(1.07);
-  }
+}
 
-  .hover-button-b {
+.hover-button-b {
     display: flex;
     padding: 12px 12px;
     margin-left: 5px;
@@ -303,9 +303,9 @@ h3{
     position: relative;
     overflow: hidden;
     transition: color 0.4s, background-color 0.4s;
-  }
+}
   
-  .hover-button-b::before {
+.hover-button-b::before {
     content: '';
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
@@ -315,26 +315,26 @@ h3{
     left: 0;
     transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
     transform: translateY(-100%);
-  }
+}
   
-  .hover-button-b:hover::before {
+.hover-button-b:hover::before {
     transform: translateY(0);
-  }
+}
   
-  .hover-button-b:hover {
+.hover-button-b:hover {
     color: white;
     background-color: rgb(255, 71, 240);
-  }
+}
 
-  .hover-button-b img{
+.hover-button-b img{
     transition: transform 0.3s ease;
-  }
+}
 
-  .hover-button-b:hover img{
+.hover-button-b:hover img{
     transform: scale(1.07);
-  }
+}
 
-  .buddies{
+.buddies{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,57 +344,92 @@ h3{
     animation: fadeIn 1s ease-out forwards; /* Animation properties */
     animation-delay: .4s;
     
-  }
+}
 
-  .buddies img{
+.buddies img{
     width: 30%;
     height: 100%;
     align-items: flex-start;
-  }
+}
 
- .buddies h2{
+.buddies h2{
     padding-left: 12px;
     font-size: 25px;
     text-align: center;
- }
+}
 
- .buddies p{
+.buddies p{
     color: rgb(209, 209, 209);
     text-align: center;
- }
+}
 
- .chuni{
+.chuni{
     display: flex;
     justify-content: center;
     align-items: center;
-  padding-top: 1.2vw;
+    padding-top: 1.2vw;
     opacity: 0;
     transform: translateY(20px); /* Start slightly below its final position */
     animation: fadeIn 1s ease-out forwards; /* Animation properties */
     animation-delay: .4s;
-  }
+}
 
-  .chuni img{
+.chuni img{
     width: 35.33%;
     height: 100%;
     align-items: flex-start;
-  }
+}
 
- .chuni h2{
+.chuni h2{
     padding-left: 12px;
     font-size: 20px;
     text-align: center;
- }
+}
 
- .chuni p{
+.chuni p{
     color: rgb(209, 209, 209);
     text-align: center;
- }
+}
 
- .buttons{
+.buttons{
     justify-content: center;
     width: 50%;
   
     margin: auto;
     margin-bottom: 20px;
- }
+}
+
+
+.sponsors h1{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sponsorContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+
+}
+
+.sponsorImg{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.sponsorImg img{
+  height: 70px;
+  width: 90%;
+
+}
+
+.sponsors{
+  opacity: 0;
+  transform: translateY(20px); /* Start slightly below its final position */
+  animation: fadeIn 1s ease-out forwards; /* Animation properties */
+  animation-delay: .8s;
+}
