@@ -223,8 +223,8 @@ p{
 }
 
 .sub-section::before{
-    -webkit-mask-image: url(https://cdn.discordapp.com/attachments/1262582032966357022/1264238580167999500/site-icon.png?ex=669d256d&is=669bd3ed&hm=4182f8f82bedd88cf0cf8bff46e2b96ce9482ee76cf714fcfb65adedfe7a0dc4&);
-    mask-image: url(https://cdn.discordapp.com/attachments/1262582032966357022/1264238580167999500/site-icon.png?ex=669d256d&is=669bd3ed&hm=4182f8f82bedd88cf0cf8bff46e2b96ce9482ee76cf714fcfb65adedfe7a0dc4&);
+    -webkit-mask-image: url(./Assets/image/site-icon.png);
+    mask-image: url(./Assets/image/site-icon.png);
     -webkit-mask-size: 700% 300%;
     mask-size: 700% 300%
 }
