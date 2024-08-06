@@ -118,7 +118,7 @@ nav ul li a:hover {
 }
 .contacts img{
     height: 150px;
-
+    width: 150px;
     border-radius: 50%;
     
 }
@@ -142,7 +142,7 @@ nav ul li a:hover {
       opacity: 1;
       transform: translateY(0); /* Move to final position */
     }
-  }
+}
 
 #Mira{
     background-color: rgba(157, 84, 216, 0.6);
@@ -157,9 +157,16 @@ nav ul li a:hover {
     border:rgb(157, 84, 216) solid 3px ;
 }
 
-#Someone{
+#Mika{
+    background-color: rgba(194, 194, 194, 0.6);
+    border: rgb(194, 194, 194) solid 3px;
+    color: white;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease-out forwards; /* Animation properties */
     animation-delay: 400ms;
+}
+
+#Mika img{
+    border: rgb(194, 194, 194) solid 3px;
 }
